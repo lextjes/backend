@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <p>
+        Dear
+        <span th:text="${registration.firstName}"></span>
+    </p>
+    <p>
+        Your registration for <span th:text="${activity.name}"></span> on <span th:text="${registration.date}"></span> was successful.
+    </p>
+    <p>
+        You can view your registration and cancel it if needed via the following
+        <a th:href="${registrationUrl}" th:text="link"></a>.
+    </p>
+</body>
+</html>
